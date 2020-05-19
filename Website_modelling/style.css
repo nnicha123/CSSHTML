@@ -1,0 +1,20 @@
+body{
+    height: 100vh;
+}
+header{
+    background-color: rgb(93, 93, 167);
+    height: 15%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+}
+li{
+    background-color: rgb(52, 114, 212);
+    padding: 10px 15px;
+}

@@ -65,7 +65,27 @@
 }
 .top-part-center{
     grid-area: top-center;
+    display: grid;
+    grid-template-areas: "large-item large-item large-item"
+                "item item item"
+                "item item item";
 }
+.top-part-center .large-item{
+    grid-area: large-item;
+    background-color: rgb(70, 187, 187);
+    margin-bottom: 10px;
+}
+
+.top-part-center .small-items {
+    grid-area: item;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+.top-part-center .small-items div{
+    background-color: rgb(185, 77, 77);
+}
+
 .top-part-right{
     background-color: orange;
     grid-area: top-right;

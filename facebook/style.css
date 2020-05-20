@@ -1,18 +1,36 @@
-header{
+body{
+    background-color: rgb(224, 224, 224);
+}
+
+.header{
     height: 40px;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    width: 100%;
     background-color: rgb(41, 41, 129);
-    margin-bottom: 10px;
+    position: sticky;
 }
 
 .sidebar{
     grid-area: side;
-
 }
+
+
 .top-main{
     grid-area: top-main;
 }
 .stories{
     grid-area:stories;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stories >div{
+    border: 1px solid orange;
+    margin: 10px;
+    width: 25%;
+    height: 70%;
 }
 .posts{
     grid-area: posts;
@@ -22,9 +40,10 @@ header{
 }
 
 .container{
-    background-color: white;
     height: 1000px;
     width: 70%;
+    border-radius: 5px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "side top-main top-main right-content"
@@ -35,14 +54,8 @@ header{
 }
 * {box-sizing: border-box;}
 
-.container {
-    border: 2px solid #f76707;
-    border-radius: 5px;
-    margin: 0 auto;
-}
-
 .container > div {
-    border: 2px solid #ffa94d;
+    background-color: white;
     border-radius: 5px;
     margin: 10px;
     color: #d9480f;

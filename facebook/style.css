@@ -1,0 +1,49 @@
+header{
+    height: 40px;
+    background-color: rgb(41, 41, 129);
+    margin-bottom: 10px;
+}
+
+.sidebar{
+    grid-area: side;
+
+}
+.top-main{
+    grid-area: top-main;
+}
+.stories{
+    grid-area:stories;
+}
+.posts{
+    grid-area: posts;
+}
+.right-content{
+    grid-area: right-content;
+}
+
+.container{
+    background-color: white;
+    height: 1000px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "side top-main top-main right-content"
+               "side stories stories right-content"
+               "side stories stories right-content"
+               "side posts  posts right-content"
+               "side posts  posts language";
+}
+* {box-sizing: border-box;}
+
+.container {
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.container > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    margin: 10px;
+    color: #d9480f;
+}

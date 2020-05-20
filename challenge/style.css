@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rebeccapurple;
+}
+
+.header{
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(15, 4, 15);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(15, 15, 102);
+    height: 100vh;
+    margin: 40px 40px;
+    width: 500px;
+}
+input{
+    width: 300px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+label{
+    color: white;
+}
+

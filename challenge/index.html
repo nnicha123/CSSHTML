@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge Facebook</title>
+    <title>Survey form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="header">
+        <div class="logo-left"></div>
+        <div class="logo-right"></div>
+    </div>
+    <h1 style="text-align: center;color: white;">freeCodeCamp Survey Form</h1>
+    <h2 style="text-align: center;color: white;font-style: italic; font-size: 17px;">Thank you for taking the time to
+        help us improve the platform</h2>
+        <form>
+            <div class="form-group">
+                <label for="">Name</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="email">
+            </div>
+            <div class="form-group">
+                <label for="">Age (optional)</label>
+                <select id="age" name="age">
+                    <option value="Select Age">Select Age</option>
+                    <option value="0-10">0-10</option>
+                    <option value="10-18">10-18</option>
+                    <option value="19-30">19-30</option>
+                    <option value="30-40">30-40</option>
+                    <option value="50++">50++</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">Which option best describes your current role?</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+            Would you recommend freeCodeCamp to a friend?
+                <label><input type="radio">Definitely</label>
+                <label><input type="radio">Not sure</label>
+                <label><input type="radio">Not sure</label>
+            </div>
+
+        </form>
+
 </body>
+
 </html>

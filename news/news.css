@@ -51,8 +51,6 @@
 .center-2{
     grid-area: ce2;
 }
-
-
 .right-1{
     grid-area: ri1;
 }
@@ -61,4 +59,15 @@
 }
 .right-3{
     grid-area: ri3;
+}
+.subscribe{
+    height: 200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+}
+.subscribe > div {
+    padding: 5px;
+    margin: 5px;
+    background-color: orange;
 }

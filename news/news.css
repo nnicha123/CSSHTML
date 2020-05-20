@@ -1,0 +1,64 @@
+.header{
+    height: 70px;
+    background-color: red;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+.nav-bar{
+    height: 30px;
+}
+.editor-pick{
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+}
+.editor-pick > div {
+    padding: 5px;
+    margin: 5px;
+    background-color: orange;
+}
+.container{
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "le1 ce1 ri1"
+                         "le1 ce1 ri2"
+                         "le1 ce1 ri3";
+    margin-bottom: 20px;
+    border: 1px solid orange;
+    padding: 20px;
+}
+.container > div{
+    padding: 5px;
+    margin: 5px;
+    background-color: orange;
+}
+.left-1{
+    grid-area: le1;
+}
+.left-2{
+    grid-area: le2;
+}
+.left-3{
+    grid-area: le3;
+}
+
+.center-1{
+    grid-area: ce1;
+}
+.center-2{
+    grid-area: ce2;
+}
+
+
+.right-1{
+    grid-area: ri1;
+}
+.right-2{
+    grid-area: ri2;
+}
+.right-3{
+    grid-area: ri3;
+}

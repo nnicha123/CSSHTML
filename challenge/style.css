@@ -41,7 +41,7 @@ form{
 .logo-right {
     display: flex;
 }
-.logo-right .box-left{
+.logo-right > div{
     display: block;
     height: 30px;
     width: 30px;

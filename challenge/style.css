@@ -23,7 +23,7 @@ body{
 
 
 form{
-    width: 60%;
+    width: 50%;
     background-color: rgb(24, 24, 65);
     margin-top: 40px;
     margin-bottom: 40px;
@@ -61,4 +61,7 @@ input{
 }
 select{
     border-radius: 5px;
+}
+label{
+    margin-bottom: 5px;
 }

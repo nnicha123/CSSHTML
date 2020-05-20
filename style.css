@@ -1,26 +1,11 @@
-/* .p1{
-    color: blue;
-    text-align: center;
-    text-shadow: 2px 2px green;
-    word-spacing: 3px;
-    text-decoration: line-through;
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-gap: 10px;
+    background-color:none;
 }
-.p2{
-    color: orangered;
-    text-align: right;
-    text-decoration: underline;
-    text-decoration-color: green;
-    text-decoration-style: dashed;
+.container > div{
+    padding: 10px 10px;
+    background-color: powderblue;
 }
-.p3{
-    text-indent: 10px;
-    color: cyan;
-}
-div{
-    display: table-cell;
-    width: 250px;
-    height: 200px;
-    padding: 10px;
-    border: 1px solid blue;
-    vertical-align: bottom;
-} */

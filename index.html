@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text design</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1 style="text-align:center">Review CSS</h1>
     <div class="container">
         <div style="text-align:center; margin-top: 30px;">
-           <b style="font-size: 24px;">Questions</b> 
+            <b style="font-size: 24px;">Questions</b>
         </div>
         <div style="text-align:center;margin-top: 30px;">
-          <b style="font-size: 24px;">Answers</b>  
+            <b style="font-size: 24px;">Answers</b>
         </div>
         <div>CSS syntax ประกอบด้วยอะไรบ้าง</div>
         <div>ประกอบไปด้วย : Selector (e.g. class,id), property (e.g. color, font-size), value (e.g. "red", 26)</div>
         <div>การเขียน CSS มีกี่แบบอะไรบ้าง</div>
-        <div>การเขียน CSS มี 3 แบบ : Internal (เขียนใน .html), External (เขียนไฟล์แยกแล้วใส่ link), Inline (เขียนใน tag)</div>
+        <div>การเขียน CSS มี 3 แบบ : Internal (เขียนใน .html), External (เขียนไฟล์แยกแล้วใส่ link), Inline (เขียนใน tag)
+        </div>
         <div>selector มีกี่แบบอะไรบ้าง
         </div>
         <div>selector มี : Class (.), ID (#), Tag (div,p), Pseudo (::before, ::after), แบบ combinator (>,+,~)</div>
         <div>combinator มีกี่แบบอะไรบ้าง </div>
-        <div>combinator มี 4 แบบ: (space) ตัวที่อยู่ข้างใน, child (>) ตัวลูก, (+) เลือกตัวถัดไป , (~) general -> อันที่มีลักษณะตามที่ระบุ</div>
+        <div>combinator มี 4 แบบ: (space) ตัวที่อยู่ข้างใน, child (>) ตัวลูก, (+) เลือกตัวถัดไป , (~) general ->
+            อันที่มีลักษณะตามที่ระบุ</div>
+        <div>property และ value คืออะไรแตกต่างกันอย่างไร</div>
+        <div>property คือค่าที่ให้เลือกว่าจะปรับอะไร e.g. color,background-color,height. Value คือค่าที่กำหนดให้ property e.g. red, 12px, bold</div>
+        <div>property ที่สอนใน precamp มีกี่กลุ่มอะไรบ้าง</div>
+        <div style="padding-top: 0; display: flex;align-items: center; font-size: 10px;">Display:flex, flex-direction (row) Default
+            <p style="font-size: 20px;color: blue;font-style: italic;">font-size(20px), color(blue),font-style (italic)
+            </p>
+            <p style="width: 80px;height: 20px;background-color: red; font-size: 5px;">width: 80px;height:20px;background-color: red;</p>
+            <p style="font-size: 20px;">font-size (20px)</p>
+            <p style="font-weight: bold;">font-weight (bold)</p>
+        </div>
+        <div>value unit มีกี่ประเภทอะไรบ้างแต่ละ ประเภทคืออะไร
+        </div>
+        <div>มี 2 ประเภท : Relative กับ fixed
+            <li>Relative จะปรับตาม container parent (e.g. 100% คือ 100% ของ parent container))</li> 
+            <li>Fixed จะไม่สนใจ parent element ค่าจะ fixed (e.g. 12px)</li>
+        </div>
     </div>
 </body>
+
 </html>

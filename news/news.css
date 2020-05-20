@@ -4,6 +4,11 @@
     overflow: hidden;
     position: sticky;
     top: 0;
+    color:white;
+}
+.newsweek{
+    display: flex;
+    justify-content: space-between;
 }
 .nav-bar{
     height: 30px;
@@ -70,4 +75,18 @@
     padding: 5px;
     margin: 5px;
     background-color: orange;
+}
+.stories-container{
+    display: grid;
+    grid-template-areas: "story-left story-center story-right";
+    list-style-type: none;
+}
+.more-stories{
+    background-color: tomato;
+    display: block;
+    grid-area: story-center;
+}
+.more-stories > li{
+    padding: 10px;
+    border: 1px solid black;
 }

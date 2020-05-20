@@ -9,20 +9,27 @@
 </head>
 
 <body>
-    <div class="header">hello</div>
+    <div class="header" style="display: flex; justify-content: space-between;">
+        <div class="logo-left" style="color: white; margin-top: 20px; line-height: 0;">FCC Survey Form
+        <p style="color: rgba(255, 255, 255, 0.5);">freeCodeCamp.org</p></div>
+        <div class="logo-right">
+            <div class="box-left"></div>
+            <div class="box-right"></div>
+        </div>
+    </div>
     <form>
         <div class="formgroup">
             <label>Name</label>
-            <input type="text">
+            <input type="text" placeholder="Enter your name">
         </div>
         <div class="formgroup">
             <label>Email</label>
-            <input type="email">
+            <input type="email" placeholder="Enter your Email">
         </div>
         <div class="formgroup">
             <label>Age (optional)</label>
             <select id="age" name="age">
-                <option value="Select Age">Select Age</option>
+                <option value="Select Age">Age</option>
                 <option value="0-10">0-10</option>
                 <option value="10-18">10-18</option>
                 <option value="19-30">19-30</option>
@@ -32,7 +39,8 @@
         </div>
         <div class="formgroup">
             <label>Which option best describes your current role</label>
-            <select name="" id="">
+            <select name="role" id="role">
+                <option value="Select an option">Select current role</option>
                 <option value=""></option>
                 <option value=""></option>
                 <option value=""></option>
@@ -47,6 +55,7 @@
         <div class="formgroup">
             <label for="">What is your favourite feature of freeCodeCamp</label>
             <select name="" id="">
+                <option value="Select an option">Select an option</option>
                 <option value=""></option>
             </select>
         </div>
@@ -66,10 +75,10 @@
         </div>
         <div class="formgroup">
             <label for="">Any comments or suggestions?</label>
-            <textarea name="" id="" cols="30" rows="5"></textarea>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Enter your comments here"></textarea>
         </div>
         <div class="formgroup">
-            <input type="submit">
+            <input type="submit" style="background-color: lightgreen;border: none;padding:10px 0;margin-top: 5px;">
         </div>
     
     </form>

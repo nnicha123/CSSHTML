@@ -6,26 +6,52 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
+    font-family: sans-serif;
 }
 
 .header{
-    width: 100%;
     height: 60px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: rgb(14, 14, 63);
     position: sticky;
 }
 
 
 form{
-    width: 40%;
-    background-color: rgb(89, 89, 226);
-    height: 60%;
+    width: 60%;
+    background-color: rgb(24, 24, 65);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 800px;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .formgroup{
     display: flex;
     flex-direction: column;
     padding: 5px 10px;
+}
+.logo-right {
+    display: flex;
+}
+.logo-right .box-left{
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+    margin: 10px;
+}
+.logo-right .box-right{
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+    margin: 10px;
 }

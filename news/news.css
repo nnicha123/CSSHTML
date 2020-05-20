@@ -10,9 +10,24 @@
     display: flex;
     justify-content: space-between;
 }
+.head-right{
+    display: flex;
+    justify-content: flex-end;
+}
 .nav-bar{
     height: 30px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
 }
+.nav-bar li{
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+
 .editor-pick{
     height: 200px;
     display: grid;

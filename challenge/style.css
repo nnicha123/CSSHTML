@@ -1,21 +1,23 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
     background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
 }
 
 form{
-    background-color: green;
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    background-color: rgb(89, 89, 226);
+    
 }
 
 .formgroup{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    background-color: red;
+    padding: 5px 10px;
 }

@@ -78,8 +78,25 @@
 }
 .stories-container{
     display: grid;
-    grid-template-areas: "story-left story-center story-right";
+    grid-template-areas: "stories-left story-center stories-right";
     list-style-type: none;
+}
+.stories-left,.stories-right{
+    display: block;
+    grid-area: stories-left;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.stories-right{
+    grid-area: stories-right;
+}
+.stories-left>div,.stories-right>div{
+    display: block;
+    height: 90px;
+    border: 1px solid black;
+    background-color: rgb(134, 187, 187);
 }
 .more-stories{
     background-color: tomato;

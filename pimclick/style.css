@@ -25,7 +25,7 @@ body{
     position: relative;
 }
 form{
-    height: 470px;
+    height: 600px;
     width: 100%;
     background-color: rgb(253, 250, 250);
     display: flex;
@@ -48,6 +48,7 @@ label{
     text-align: left;
     padding-top: 20px;
     color: grey;
+    padding-bottom: 20px;
 }
 .form-inside{
     width: 70%;

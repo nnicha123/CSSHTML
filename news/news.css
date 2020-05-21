@@ -57,10 +57,29 @@
 }
 .top-part-container >div {
     margin: 20px;
+    height: 800px;
 }
 .top-part-left{
     grid-area: top-left;
-    background-color: red;
+    height: 100%;
+}
+.top-part-left div:nth-child(1){
+    display: block;
+    height: 50%;
+    background-color: lime;
+    margin-bottom: 10px;
+}
+.top-part-left div:nth-child(2){
+    display: block;
+    height: 30%;
+    background-color: lime;
+    margin-bottom: 10px;
+}
+.top-part-left div:nth-child(3){
+    display: block;
+    height: 30%;
+    background-color: lime;
+    margin-bottom: 10px;
 }
 .top-part-center{
     grid-area: top-center;
@@ -68,6 +87,7 @@
     grid-template-areas: "large-item large-item large-item"
                 "item item item"
                 "item item item";
+    grid-template-rows: 1fr 1fr;
 }
 .top-part-center .large-item{
     grid-area: large-item;
@@ -91,7 +111,7 @@
 }
 .top-part-right > li {
     list-style-type: none;
-    padding: 20px;
+    padding: 43px;
     border-bottom: 1px solid black;
 }
 
@@ -107,7 +127,7 @@
     background-color: orange;
 }
 .container{
-    height: 100px;
+    height: 300px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-areas: "le1 ce1 ri1"
@@ -162,7 +182,15 @@
     grid-template-areas: "stories-left story-center stories-right";
     list-style-type: none;
 }
-.stories-left,.stories-right{
+.stories-right{
+    display: block;
+    grid-area: stories-right;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.stories-left{
     display: block;
     grid-area: stories-left;
     margin: 20px;
@@ -170,14 +198,17 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.stories-right{
-    grid-area: stories-right;
+.stories-left{
+    margin-top: 100px;
+    grid-area: stories-left;
 }
+
 .stories-left>div,.stories-right>div{
     display: block;
     height: 90px;
     background-color: rgb(134, 187, 187);
 }
+
 .more-stories{
     background-color: tomato;
     display: block;

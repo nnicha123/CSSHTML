@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .container{
+            height: 100%;
+            width: 80%;
+            grid-template-columns: 1fr 1fr 60px;
+        }
+        .container > div {
+            margin-bottom: 10px;
+        }
+        img{
+            width: 100%;
+            box-shadow: 0 2px 3px 1px;
+        }
+        .middle-container{
+            display: grid;
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+
+        .item{
+            box-shadow: 0 2px 3px 1px;
+            height: 200px;
+            background-color: rgb(175, 67, 67);
+        }
+        .bottom-container{
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .bottom-container div{
+            width: 60%;
+            background-color: hotpink;
+            box-shadow: 0 2px 3px 1px;
+        }
+   
+        @media only screen and (max-width: 400px){
+            .middle-container{
+                grid-template-columns: 1fr;
+            }
+            .item{
+                width: 100%;
+                font-size: 17px;
+            }
+        }
+        @media only screen and (min-width: 800px){
+            .middle-container{grid-template-columns: repeat(3,1fr);}
+            .item{
+                width: 100%;
+                font-size: 17px;
+            }
+        }
+        @media only screen and (max-width: 799px) and (min-width: 401px){
+            .middle-container{grid-template-columns: repeat(2,auto);}
+            .item{
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-container">
+            <img src="dog.jpg" alt="dog">
+        </div>
+        <div class="middle-container">
+            <div class="item">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsam? </p>
+            </div>
+            <div class="item">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsam? </p>
+            </div>
+            <div class="item">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsam? </p>
+            </div>
+            <div class="item">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsam? </p>
+            </div>
+            <div class="item">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsam? </p>
+            </div>
+            <div class="item">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsam? </p>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, illum?</div>
+        </div>
+
+    </div>
+</body>
+</html>

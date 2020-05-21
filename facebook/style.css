@@ -27,7 +27,6 @@ body{
     justify-content: center;
 }
 .stories >div{
-    border: 1px solid orange;
     margin: 10px;
     width: 25%;
     height: 70%;
@@ -38,17 +37,21 @@ body{
 .right-content{
     grid-area: right-content;
 }
+.birthday-content{
+    grid-area: birthday-content;
+}
 
 .container{
     height: 1000px;
-    width: 70%;
+    width: 80%;
     border-radius: 5px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "side top-main top-main right-content"
+    grid-template-areas: "side top-main top-main birthday-content"
+               "side top-main top-main right-content"
                "side stories stories right-content"
-               "side stories stories right-content"
+               "side posts  posts right-content"
                "side posts  posts right-content"
                "side posts  posts language";
 }
@@ -59,4 +62,8 @@ body{
     border-radius: 5px;
     margin: 10px;
     color: #d9480f;
+}
+img{
+    height: 100%;
+    width: 100%;
 }

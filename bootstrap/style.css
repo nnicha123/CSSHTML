@@ -1,0 +1,11 @@
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.row{
+    height: 20%;
+}
+.col-sm{
+    background-color: tomato;
+    margin: 10px;
+}

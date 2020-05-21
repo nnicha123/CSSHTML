@@ -128,6 +128,33 @@ input{
     color: rgb(230, 230, 230);
     font-size: 22px;
 }
+.end-grid{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    margin-top: 50px;
+}
+
+.end-right::before{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.end-right{
+    padding-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+    position: relative;
+}
+.end-right> div{
+    width: 120px;
+}
 
 @media only screen and (max-width: 600px){
     .form-inside{
@@ -135,5 +162,17 @@ input{
         display: flex;
         flex-direction: column;
     }
-
+}
+@media only screen and (max-width:781px){
+    .end-right{
+        padding-top: 30px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        position: relative;
+        grid-gap: 0px;
+    }
+    .end-right> div{
+        width: 100%;
+    }
 }

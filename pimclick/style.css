@@ -128,6 +128,15 @@ input{
     color: rgb(230, 230, 230);
     font-size: 22px;
 }
+.contact-us{
+    margin-top: 100px;
+}
+.contact-us a{
+    text-decoration: none;
+    color: rgb(48, 44, 44);
+    font-size: 57px;
+    font-weight: 700;
+}
 .end-grid{
     width: 100vw;
     display: grid;

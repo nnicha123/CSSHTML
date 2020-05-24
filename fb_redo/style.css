@@ -6,6 +6,7 @@ body{
     background-color: #2222;
     font-size: 10px;
     font-family: sans-serif;
+    margin: 0;
 }
 .header{
     height: 40px;
@@ -175,7 +176,7 @@ input{
     justify-content: flex-start;
     align-items: center;
     color: rgb(26, 26, 116);
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
 }
 .top-bar img{
@@ -197,7 +198,7 @@ input{
 
 .right{
     display: grid;
-    grid-template-rows:  50px 400px 50px;
+    grid-template-rows:  50px 350px 50px;
     grid-row-gap: 10px;
 }
 .right .birthday{
@@ -247,5 +248,5 @@ input{
     background-color: white;
     position: -webkit-sticky;
     position: sticky;
-    top: 460px;
+    top: 410px;
 } 

@@ -10,6 +10,25 @@ body{
     width: 100%;
     background-color: rgb(47, 47, 107);
     /* margin-bottom: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header div{
+    padding: 10px 10px;
+}
+.white-box{
+    height: 2.5px;
+    width: 2.5px;
+    background-color: white;
+    color: rgb(47, 47, 107);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    display: flex;
 }
 .container{
     margin-top: 10px;

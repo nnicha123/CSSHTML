@@ -89,6 +89,27 @@ input{
 }
 .create{
     background-color: white;
+    display: grid;
+    grid-template-rows: 25% 50% 25%;
+}
+.create .create-post{
+    background-color: rgb(238, 235, 235);
+    padding-left: 10px;
+    padding-top: 10px;
+    border-top: 1px solid  rgb(190, 190, 190);
+}
+.create .thoughts{
+    display: flex;
+    align-items: center;
+}
+.thoughts img{
+    margin-left: 10px;
+    padding-right: 10px;
+}
+.create .others{
+    margin-left: 15px;
+    margin-right: 15px;
+    border-top: 1px solid rgb(190, 190, 190);
 }
 .story{
     background-color: white;

@@ -5,6 +5,7 @@ body{
     align-items: center;
     background-color: #2222;
     font-size: 10px;
+    font-family: sans-serif;
 }
 .header{
     height: 40px;
@@ -110,9 +111,51 @@ input{
     margin-left: 15px;
     margin-right: 15px;
     border-top: 1px solid rgb(190, 190, 190);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.others .other{
+    margin:0 10px;
+    width: 100px;
+    height: 15px;
+    background-color: rgb(238, 235, 235);
+    border-radius: 10px;
 }
 .story{
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.story div{
+    margin-right: 10px;
+    height: 150px;
+    width: 100px;
+    background-color: grey;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.story span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 10;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(50, 131, 185);
+}
+.story .friend{
+    border: 3px solid rgb(9, 101, 206);
 }
 .post {
     width: 100%;
@@ -122,6 +165,32 @@ input{
 }
 .post .item{
     background-color: white;
+    display: grid;
+    grid-template-rows: 50px 300px 50px;
+}
+.top-bar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(26, 26, 116);
+    font-size: 15px;
+    font-weight: bold;
+}
+.top-bar img{
+    height: 80%;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.main-bar img{
+    width: 100%;
+    height: 100%;
+}
+.like-comment{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+    line-height: 0;
 }
 
 .item-right{
@@ -131,6 +200,15 @@ input{
 }
 .item-right .birthday{
     background-color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.birthday i{
+    color: ye;
+    margin-left: 10px;
+    margin-right: 5px;
 }
 .item-right .advert{
     background-color: white;    

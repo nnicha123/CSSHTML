@@ -211,17 +211,16 @@ input{
 }
 .right .advert{
     background-color: white;    
-    /* position: -webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
-    top: 50px; */
+    top: 50px;
 }
 .right .language{
     font-size: 12px;
     text-align: center;
     line-height: 25px;
     background-color: white;
-    /* position: -webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
     top: 460px;
-} */
-}
+} 

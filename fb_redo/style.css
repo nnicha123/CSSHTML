@@ -55,15 +55,15 @@ input{
 .container{
     margin-top: 10px;
     height: 1000px;
-    width: 75%;
+    width: 85%;
     /* background-color:white; */
     display: grid;
-    grid-template-columns: 15% 50% 25%;
+    grid-template-columns: 15% 50% 20%;
     grid-column-gap: 10px;
 }
 .left{
     grid-column: 1/2;
-    font-size: 15px;
+    font-size: 12px;
 }
 .left .one li{
     list-style-type: none;
@@ -193,12 +193,12 @@ input{
     line-height: 0;
 }
 
-.item-right{
+.right{
     display: grid;
     grid-template-rows:  50px 400px 50px;
     grid-row-gap: 10px;
 }
-.item-right .birthday{
+.right .birthday{
     background-color: white;
     font-weight: bold;
     display: flex;
@@ -206,22 +206,22 @@ input{
     align-items: center;
 }
 .birthday i{
-    color: ye;
     margin-left: 10px;
     margin-right: 5px;
 }
-.item-right .advert{
+.right .advert{
     background-color: white;    
-    position: -webkit-sticky;
+    /* position: -webkit-sticky;
     position: sticky;
-    top: 50px;
+    top: 50px; */
 }
-.item-right .language{
+.right .language{
     font-size: 12px;
     text-align: center;
     line-height: 25px;
     background-color: white;
-    position: -webkit-sticky;
+    /* position: -webkit-sticky;
     position: sticky;
     top: 460px;
+} */
 }

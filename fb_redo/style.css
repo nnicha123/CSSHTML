@@ -19,7 +19,7 @@ body{
     position: sticky;
     position: -webkit-sticky;
     top: 0px;
-    
+    z-index: 10;
 }
 .header div{
     padding: 10px 10px;
@@ -37,7 +37,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10;
+    border-radius: 3px;
 }
 input{
     width: 500px;

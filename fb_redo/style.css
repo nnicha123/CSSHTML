@@ -69,7 +69,7 @@ input{
 .left .one li{
     list-style-type: none;
     /* margin: 10px; */
-    height: 26px;
+    height: 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -131,11 +131,13 @@ input{
     justify-content: center;
     position: relative;
 }
+.story img{
+    border-radius: 10px;
+}
 .story div{
     margin-right: 10px;
     height: 150px;
-    width: 100px;
-    background-color: grey;
+    width: 110px;
     border-radius: 10px;
     /* overflow: hidden; */
     position: relative;
@@ -214,7 +216,30 @@ input{
     position: -webkit-sticky;
     position: sticky;
     top: 50px;
+    display: grid;
+    grid-template-rows: 20px 1fr;
 }
+.ad-top{
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.ad-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 8px;
+}
+.ad-content div{
+    margin: 2px 5px;
+}
+.ad-content img{
+    margin: 2px 5px;
+    width: 90%;
+}
+
 .right .language{
     font-size: 12px;
     text-align: center;

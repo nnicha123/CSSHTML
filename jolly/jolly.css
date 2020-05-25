@@ -95,6 +95,25 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+.four-heading::before{
+    content: "";
+    width: 450px;
+    height: 10px;
+    background-image: linear-gradient(to left,rgb(236, 185, 42),rgba(236, 185, 42,0.1) );
+    position: absolute;
+    top: 35px;
+    left: 40px;
+}
+.four-heading::after{
+    content: "";
+    width: 450px;
+    height: 10px;
+    background-image: linear-gradient(to right,rgb(236, 185, 42),rgba(236, 185, 42,0.1) );
+    position: absolute;
+    top: 35px;
+    right: 40px;
 }
 .four-content{
     margin: 0 38px;

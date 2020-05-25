@@ -23,6 +23,12 @@ i{
 }
 .center-group{
     display: flex;
+    width: 500px;
+    justify-content: stretch;
+    background-color: green;
+}
+input{
+    width: 100%;
 }
 .right-group{
     display: flex;

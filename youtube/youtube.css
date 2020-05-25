@@ -1,0 +1,34 @@
+.container{
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.center-content{
+    background-color: gold;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+i{
+    color: grey;
+}
+.left-group{
+    display: flex;
+}
+.center-group{
+    display: flex;
+}
+.right-group{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.right-group div{
+    margin: 10px;
+}

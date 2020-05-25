@@ -21,7 +21,7 @@ body{
     align-content: center;
     justify-content: center;
 }
-.one .one-item{
+.one-item{
     width: 200px;
     height: 30px;
     text-align: center;
@@ -47,7 +47,7 @@ body{
     background-color: rgb(236, 185, 42);
 }
 .two-kombucha{
-    grid-area: 2/3/2/5;
+    grid-area: 2/3/3/5;
     width: 345px;
     height: 185px;
     background-color: rgb(236, 185, 42);

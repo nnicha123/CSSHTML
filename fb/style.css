@@ -1,9 +1,4 @@
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #2222;
     font-size: 10px;
     font-family: sans-serif;
     margin: 0 0;
@@ -20,11 +15,11 @@ body{
 .header{
     margin: 0 0;
     height: 100%;
-    width: 100%;
+    width: 80%;
     background-color:  rgb(62, 62, 126);
     /* margin-bottom: 10px; */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     color: white;
 }
@@ -34,7 +29,7 @@ body{
 
 /*  */
 input{
-    width: 450px;
+    width: 350px;
 }
 .search{
     display: flex;
@@ -54,7 +49,7 @@ i{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: centers;
+    justify-content: center;
 }
 .center i{
     padding-right: 10px;
@@ -69,6 +64,6 @@ i{
     padding:10px;
     border-right: 1px solid rgb(40, 40, 100);
 }
-.right{
+/* .right{
     width :150px
-}
+} */

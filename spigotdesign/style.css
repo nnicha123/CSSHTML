@@ -1,0 +1,39 @@
+.header{
+    height: 60px;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    height: 100%;
+}
+.header-right a{
+    padding: 10px;
+    color: grey;
+}
+.header-right i{
+    margin-right: 20px;
+}
+.pic-element{
+    height: 500px;
+    background: linear-gradient(to right, rgb(44, 18, 44),rgb(37, 19, 37));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgb(52, 3, 75),rgb(180, 59, 180));
+}
+.text{
+    font-size: 50px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: center;
+    width: 60%;
+    margin-top: 20px;
+}

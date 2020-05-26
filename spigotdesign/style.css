@@ -89,6 +89,10 @@ button{
     width:100%;
     height: 700px;
 }
+/* .container{
+    height: 500px;
+    width: 100%;
+} */
 .row{
     height: 300px;
 }
@@ -121,4 +125,36 @@ button{
 }
 .box:hover{
     box-shadow: 0 8px 6px -6px black;
+}
+.foot{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 100px;
+}
+.foot img{
+    width: 100%;
+    height: 100%;
+}
+.circle-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(167, 158, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-icon:hover{
+    background-color: violet;;
+}
+.footer{
+    background-color: rgb(24, 24, 44);
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+i{
+    color: rgb(24, 24, 44);
 }

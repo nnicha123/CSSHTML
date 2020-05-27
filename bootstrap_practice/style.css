@@ -1,0 +1,4 @@
+/* Bootstrap padding fix */
+[class*="col-"]{
+    padding: 1.5rem;
+}

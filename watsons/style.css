@@ -1,0 +1,92 @@
+.left a,.right a{
+    color: rgb(233, 233, 233);
+}
+.fa-user,.fa-shopping-bag{
+    font-size: 30px;
+}
+.user-circle{
+    border: 2px solid rgb(75, 68, 68);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end{
+    margin-top: 10px;
+    background-color: rgb(33, 126, 150);
+    padding: 15px;
+}
+.end >a, .end > span {
+    padding: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.end a:hover{
+    background-color: white;
+    color: rgb(33, 126, 150);
+    text-decoration: none;
+}
+.blog a{
+    color: rgb(255, 27, 160);
+    font-weight: bold;
+    padding: 5px 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+.after{
+    margin: 10px 0;
+}
+.after > div{
+    height: 30px;
+    width: 350px;
+    border-right: 1px solid rgb(184, 178, 178);
+    text-align: center;
+}
+.after div:hover{
+    cursor: pointer;
+}
+.fa-warehouse,.fa-truck-moving,.fa-user-plus{
+    color: rgb(184, 178, 178);
+}
+.pro-item{
+    padding: 20px 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pro-circle{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, red, purple);
+}
+.b-day-items{
+    margin-right: 30px;
+    color: black;
+    font-weight: bold;
+}
+.b-day-items:hover{
+    text-decoration: none;
+    border-bottom: 3px solid teal;
+    color: rgb(139, 204, 204);
+}
+.thing{
+    height: 400px;
+    position: relative;
+}
+.fa-star{
+    color: gold;
+    font-size: 15px;
+}
+.bag{
+    color: teal;
+    font-size: 20px;
+}
+.thing-price{
+    font-weight: bold;
+    color: rgb(247, 55, 151);
+}

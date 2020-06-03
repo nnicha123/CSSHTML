@@ -111,14 +111,14 @@ svg circle:nth-child(2){
     stroke-dashoffset: 440;
 }
 .card:nth-child(1) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440-(440*90)/100);
+    stroke-dashoffset: calc(440px - (440*90/100));
     stroke: #00ff43;
 }
 .card:nth-child(2) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440-(440*85)/100);
+    stroke-dashoffset: calc(440px - (440*80/100));
     stroke: #00a1ff;
 }
 .card:nth-child(3) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440-(440*60)/100);
+    stroke-dashoffset: calc(440px - (440*60/100));
     stroke: #ff04f7;
 }

@@ -45,7 +45,7 @@ body{
     height: 10px;
     background-color:  #FFD027;
     margin-right: 10px;
-    
+
 }
 
 .interest-items{
@@ -53,4 +53,13 @@ body{
 }
 .interest-items div{
     margin-right: 15px;
+}
+ul {
+    list-style-type: none;
+}
+li::before{
+    content: "•";
+    margin-right: 10px;
+    font-size: 20px;
+    color: #FFD027;
 }

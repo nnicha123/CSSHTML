@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header-wrapper{
+    background-color: teal;
+}
+.header{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 20px;
+    height: 200px;
+    padding: 20px 20px 0 20px;
+}
+.head-right img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.head-bottom{
+    display:flex;
+    justify-content: center;
+    background-color: turquoise;
+    padding: 10px;
+}
+.header-items{
+    display: flex;
+    margin-right: 20px;
+}
+.content{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 100px;
+    margin: 0 30px;
+}

@@ -9,6 +9,32 @@ p,li{
     background-color: rgb(25, 39, 51);
     color: white;
 }
+.header-items{
+    display: flex;
+    margin: 10px;
+}
+.column-2{
+    margin-left: 30px;
+}
+@media only screen and (max-width: 670px) {
+    .social{
+        display: flex;
+        flex-direction: column;
+    }
+    .image-wrapper{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .interest-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .column-2{
+        margin-left: 0;
+    }
+  }
+
 .wrapper{
     width: 100%;
     margin: 0;

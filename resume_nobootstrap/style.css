@@ -83,23 +83,34 @@ img{
     margin-right: 5px;
 }
 @media only screen and (max-width: 767px){
-    .image-wrapper{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-}
-@media only screen and (max-width: 670px) {
-    .social{
+    .header{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        height: max-content;
+        padding: 30px;
+    }
+    .head-bottom{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+    .head-bottom > *{
+        padding: 5px 30px;
     }
 
+}
+@media only screen and (max-width:960px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
     .interest-items{
         display: flex;
         flex-direction: column;
     }
-    .column-2{
-        margin-left: 0;
+    .interest-items > * {
+        margin-bottom: 10px;
     }
-  }
+}

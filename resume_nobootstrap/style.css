@@ -1,16 +1,21 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: verdana;
 }
 .header-wrapper{
-    background-color: teal;
+    background-color: rgb(25, 39, 51);
+    color: white;
+}
+h2,h3,h4,h5{
+    /* line-height: 15px; */
 }
 .header{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 100px;
     height: 200px;
-    padding: 20px 20px 0 20px;
+    padding: 30px 50px 30px 50px;
 }
 .head-right img{
     width: 150px;
@@ -20,15 +25,18 @@ body{
 .head-bottom{
     display:flex;
     justify-content: center;
-    background-color: turquoise;
+    background-color: rgb(4, 6, 15);
     padding: 10px;
+}
+img{
+    border: 3px solid #FFD027;
 }
 .header-items{
     display: flex;
     margin-right: 20px;
 }
 .content{
-    padding: 20px;
+    padding: 20px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 100px;
@@ -74,3 +82,24 @@ body{
 .interest div{
     margin-right: 5px;
 }
+@media only screen and (max-width: 767px){
+    .image-wrapper{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .social{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .interest-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .column-2{
+        margin-left: 0;
+    }
+  }

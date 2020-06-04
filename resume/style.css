@@ -1,0 +1,55 @@
+body{
+    background-color: whitesmoke;
+}
+.header{
+    background-color: rgb(25, 30, 51);
+    color: white;
+}
+.wrapper{
+    width: 100%;
+    margin: 0;
+}
+.social{
+    background-color: rgb(4, 6, 15);
+}
+.social span{
+    margin-right: 10px;
+    padding: 10px;
+}
+.image{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #FFD027;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.skillset{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skillset li{
+    padding: 5px;
+    margin: 5px 5px;
+    list-style-type: none;
+    background-color:  #FFD027;
+}
+.small-box{
+    display: flex;
+}
+.small-box div{
+    width: 10px;
+    height: 10px;
+    background-color:  #FFD027;
+    margin-right: 10px;
+}
+
+.interest-items{
+    display: flex;
+}
+.interest-items div{
+    margin-right: 15px;
+}

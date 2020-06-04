@@ -34,3 +34,43 @@ body{
     grid-column-gap: 100px;
     margin: 0 30px;
 }
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.skillset{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skillset li{
+    list-style-type: none;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #FFD027;
+}
+.small-box{
+    display: flex;
+}
+.small-box div{
+    width: 10px;
+    height: 10px;
+    background-color: #FFD027;
+    margin: 5px;
+}
+.english{
+    display: flex;
+    justify-content: space-between;
+}
+.interest-items{
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-between;
+}
+.interest{
+    display: flex;
+}
+.interest div{
+    margin-right: 5px;
+}

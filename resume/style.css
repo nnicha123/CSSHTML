@@ -37,6 +37,9 @@ body{
     list-style-type: none;
     background-color:  #FFD027;
 }
+.skillset li::before{
+    display: none;
+}
 .small-box{
     display: flex;
 }

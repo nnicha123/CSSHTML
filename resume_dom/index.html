@@ -52,7 +52,7 @@
     <div class="content-wrapper d-flex flex-column justify-content-center align-items-center">
         <div class="row wrapper m-0 d-flex justify-content-center content">
             <div class="work-experience mt-2 col-md-5">
-                <div class="splan">
+                <div class="splan" id="workOne">
                     <h4 style="color:#FFD027"><u>WORK EXPERIENCE</u></h4>
                     <h4 class="mt-4"><b>Strategic Planner</b></h4>
                     <h4>Nissan Motor Asia Pacific</h4>
@@ -69,7 +69,7 @@
                             improvement plans to improve staff information database</li>
                     </ul>
                 </div>
-                <div class="tsusho">
+                <div class="tsusho"  id="workTwo">
                     <h4><b>Software Engineer</b></h4>
                     <h4>Toyota Tsusho Denso Electronics</h4>
                     <h5 style="color:#FFD027">11/2018-08/2019</h5>
@@ -83,7 +83,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="tsusho-intern">
+                <div class="tsusho-intern"  id="workThree">
                     <h4><b>Research Engineer</b></h4>
                     <h4>Toyota Tsusho Denso Electronics</h4>
                     <h5 style="color:#FFD027">06/2017-08/2017</h5>
@@ -95,7 +95,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="education mt-4">
+                <div class="education mt-4" id="education">
                     <h4 style="color:#FFD027"><u>EDUCATION</u></h4>
                     <h4>MEng Electronic and Electrical Engineering</h4>
                     <p>University of Southampton</p>
@@ -106,13 +106,13 @@
                 <div class="skills d-flex flex-column align-items-start">
                     <h4 style="color:#FFD027"><u>SKILLS</u></h4>
                     <div class="skillset mt-2">
-                        <li>Teamwork</li>
-                        <li>Leadership</li>
-                        <li>Flexibility</li>
-                        <li>Language</li>
-                        <li>Electronics</li>
-                        <li>Programming</li>
-                        <li>Problem Solving</li>
+                        <li id="teamWork">Teamwork</li>
+                        <li id="leaderShip">Leadership</li>
+                        <li id="flexibility">Flexibility</li>
+                        <li id="language">Language</li>
+                        <li id="electronics">Electronics</li>
+                        <li id="programming">Programming</li>
+                        <li id="problemSolving">Problem Solving</li>
                     </div>
                 </div>
                 <div class="expand-skills mt-4">
@@ -182,7 +182,16 @@
         </div>
         <div class="buttons d-flex justify-content-center align-items-center">
             <button class="button-dark" type="button" onclick="darkMode()">Change to Dark Mode</button>
-            <div class="inputs d-flex">
+            <div class="inputs d-flex flex-column">
+                <form>
+                    Select where to add info.:
+                    <select>
+                      <option id="work1" selected>Work-1</option>
+                      <option id="work2">Work-2</option>
+                      <option id="work3">Work-3</option>
+                      <option id="education">Education</option>
+                    </select>
+                  </form>
                 <input type="text" id="experience-input">
                 <button class="button-input m-0" type="button" onclick="inputItems()">Input items to experience</button>
             </div>

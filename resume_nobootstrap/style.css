@@ -68,6 +68,18 @@ img{
     grid-column-gap: 100px;
     margin: 0 30px;
 }
+.title{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.place {
+    font-weight: lighter;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+.date{
+    font-size: 1.1rem;
+}
 .skills{
     display: flex;
     flex-direction: column;

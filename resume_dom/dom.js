@@ -41,5 +41,16 @@ function removeItem(id){
 // Change number via the input box
 function changeNumber(){
     let numberValue = document.getElementById("number-input").value;
-    document.getElementById("number").innerHTML = numberValue;
+    let name;
+    if(document.getElementById("Number").selected){
+        name = "number";
+        document.getElementsByClassName("button-number")[0].innerHTML = "Click to update number";
+    }else if(document.getElementById("Email").selected){
+        name = "email";
+        document.getElementsByClassName("button-number")[0].innerHTML = "Click to update email";
+    }else if(document.getElementById("Location").selected){
+        name = "location";
+        document.getElementsByClassName("button-number")[0].innerHTML = "Click to update location";
+    }
+    document.getElementById(name).innerHTML = numberValue;
 }

@@ -24,7 +24,14 @@ p,li{
     .image-wrapper{
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-top: 40px;
+        order: -1;
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
     }
 }
 @media only screen and (max-width: 670px) {

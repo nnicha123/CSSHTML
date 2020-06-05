@@ -111,13 +111,13 @@ li::before{
     font-size: 20px;
     color: #FFD027;
 }
-.button-dark{
+.button-dark,.button-input{
     background-color: rgb(4, 6, 15);
     color: white;
     border: none;
     padding: 10px 20px;
     margin: 20px;
 }
-.button-dark:hover{
+.button-dark:hover,.button-input:hover{
     cursor: pointer;
 }

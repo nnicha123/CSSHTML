@@ -17,3 +17,10 @@ function darkMode() {
     document.getElementsByClassName("button-dark")[0].style.backgroundColor = "whitesmoke";
     document.getElementsByClassName("button-dark")[0].style.color = "rgb(25, 39, 51)";
 }
+function inputItems(){
+    let text = document.getElementById("experience-input").value;
+    let el = document.createElement("p");
+    el.innerHTML = text;
+    document.getElementsByClassName("work-experience")[0].appendChild(el);
+    document.getElementById("experience-input").value = "";
+}

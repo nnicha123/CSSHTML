@@ -1,6 +1,7 @@
 body{
     background-color: whitesmoke;
     font-family: verdana;
+    
 }
 p,li{
     font-size: 15px;
@@ -57,6 +58,7 @@ p,li{
     width: 120px;
     height: 120px;
     border: 3px solid #FFD027;
+
 }
 .skills{
     display: flex;
@@ -109,12 +111,13 @@ li::before{
     font-size: 20px;
     color: #FFD027;
 }
-button{
+.button-dark{
     background-color: rgb(4, 6, 15);
     color: white;
     border: none;
     padding: 10px 20px;
+    margin: 20px;
 }
-button:hover{
+.button-dark:hover{
     cursor: pointer;
 }

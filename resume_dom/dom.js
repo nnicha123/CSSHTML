@@ -34,4 +34,7 @@ function inputItems(){
     document.getElementById(name).appendChild(el);
     document.getElementById("experience-input").value = "";
 }
-document.getElementsByClassName("skillset")[0].addEventListener("")
+// Can remove skills by clicking on them
+function removeItem(id){
+    document.getElementById(id).style.display = "none";
+}

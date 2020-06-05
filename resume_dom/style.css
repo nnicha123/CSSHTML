@@ -121,3 +121,7 @@ li::before{
 .button-dark:hover,.button-input:hover{
     cursor: pointer;
 }
+.skill-list:hover{
+    background-color: rgba(255,208,39,0.5);
+    cursor: pointer;
+}

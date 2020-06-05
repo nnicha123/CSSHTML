@@ -38,3 +38,8 @@ function inputItems(){
 function removeItem(id){
     document.getElementById(id).style.display = "none";
 }
+// Change number via the input box
+function changeNumber(){
+    let numberValue = document.getElementById("number-input").value;
+    document.getElementById("number").innerHTML = numberValue;
+}

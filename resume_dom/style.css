@@ -111,15 +111,20 @@ li::before{
     font-size: 20px;
     color: #FFD027;
 }
-.button-dark,.button-input{
+.button-dark,.button-input,.button-number{
     background-color: rgb(4, 6, 15);
     color: white;
     border: none;
     padding: 10px 20px;
     margin: 20px;
 }
-.button-dark:hover,.button-input:hover{
+.button-number{
+    margin-top: 0;
+    margin-left: 0;
+}
+.button-dark:hover,.button-input:hover,.button-number:hover{
     cursor: pointer;
+    background-color: rgba(4,6,15,0.4);
 }
 .skill-list:hover{
     background-color: rgba(255,208,39,0.5);

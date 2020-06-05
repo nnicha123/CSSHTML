@@ -30,7 +30,7 @@
             <div class="col-md-12 d-flex justify-content-center social pl-2  pr-2 m-0">
                 <div class="header-items">
                     <div><i class="fa fa-phone icon-top" aria-hidden="true" style="color: white;margin-right: 5px;"></i></div>
-                    <div class="info">085-910-2653</div>
+                    <div class="info" id="number">085-910-2653</div>
                 </div>
                 <div class="header-items">
                     <div><i class="fa fa-envelope icon-top" aria-hidden="true" style="color: white;margin-right: 5px;"></i></div>
@@ -194,6 +194,10 @@
                   </form>
                 <input type="text" id="experience-input">
                 <button class="button-input m-0" type="button" onclick="inputItems()">Input items to experience</button>
+            </div>
+            <div class="changeNumber ml-3 d-flex flex-column justify-content-start">
+                <input type="text" placeholder="Change Number" id="number-input">
+                <button class="button-number" type="button" onclick="changeNumber()">Click to update number</button>
             </div>
         </div>
         

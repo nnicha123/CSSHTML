@@ -214,6 +214,16 @@
         </div>
 
     </div>
+    <script>
+        function toggleDark() {
+            var element = document.body;
+            var newhead = document.getElementsByClassName("header")[0];
+            var socialEl = document.getElementsByClassName("social")[0];
+            socialEl.classList.toggle("social-dark-mode");
+            newhead.classList.toggle("header-dark-mode");
+            element.classList.toggle("dark-mode");
+        }
+    </script>
     <script src="dom.js"></script>
 </body>
 

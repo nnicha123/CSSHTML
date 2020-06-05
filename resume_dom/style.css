@@ -109,3 +109,12 @@ li::before{
     font-size: 20px;
     color: #FFD027;
 }
+button{
+    background-color: rgb(4, 6, 15);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+button:hover{
+    cursor: pointer;
+}

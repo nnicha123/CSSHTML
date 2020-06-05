@@ -6,9 +6,7 @@ body{
 p,li{
     font-size: 15px;
 }
-/* h1,h2,h3,h4{
-    font-weight: lighter;
-} */
+
 .header{
     background-color: rgb(25, 39, 51);
     color: white;
@@ -149,4 +147,16 @@ li::before{
 .skill-list:hover{
     background-color: rgba(255,208,39,0.5);
     cursor: pointer;
+}
+.dark-mode{
+    background-color: rgb(25, 39, 51);
+    color: white;
+}
+.header-dark-mode{
+    background-color: white;
+    color: rgb(25, 39, 51);
+}
+.social-dark-mode{
+    color: rgb(25, 39, 51);
+    background-color: whitesmoke;
 }

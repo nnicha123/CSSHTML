@@ -41,7 +41,7 @@ h5{
     grid-template-columns: 3fr 1fr;
     grid-column-gap: 100px;
     height: 200px;
-    padding: 30px 50px 30px 50px;
+    padding: 30px 80px 30px 80px;
 }
 .head-right img{
     width: 150px;
@@ -52,7 +52,7 @@ h5{
     display:flex;
     justify-content: center;
     background-color: rgb(4, 6, 15);
-    padding: 10px;
+    padding: 10px 80px;
 }
 img{
     border: 3px solid #FFD027;
@@ -109,6 +109,20 @@ img{
 .interest div{
     margin-right: 5px;
 }
+.responsibility{
+    list-style-type: none;
+}
+.responsibility li{
+    position: relative;
+}
+.responsibility li::before{
+    display: block;
+    content: "•";
+    color: #FFD027;
+    position: absolute;
+    top: 0px;
+    left: -15px;
+}
 @media only screen and (max-width: 767px){
     .header{
         display: flex;
@@ -125,6 +139,13 @@ img{
     .head-bottom > *{
         padding: 5px 30px;
     }
+    .interest-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .interest-items > * {
+        margin-bottom: 10px;
+    }
 
 }
 @media only screen and (max-width:960px){
@@ -133,11 +154,5 @@ img{
         flex-direction: column;
         padding: 30px;
     }
-    .interest-items{
-        display: flex;
-        flex-direction: column;
-    }
-    .interest-items > * {
-        margin-bottom: 10px;
-    }
+
 }

@@ -208,21 +208,20 @@ p{
         margin: 5px;
         background: white;
     }
-    .topics{
-        transform: translate(-100%,-100%)
-    }
-    .header-wrapper{
-        height: max-content;
-    }
 
-    .topics.open{
+    .topics-close{
+        display: none;
+    }
+    
+    .topics{
        flex-direction: column;
        align-items: flex-end;
        width: max-content;
        position: fixed;
        margin-right: auto;
        z-index: 2;
-       transform:translate(0,0)
+       position: absolute;
+       right:0;
     }
     .topics li{
         border: none;

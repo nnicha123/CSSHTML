@@ -191,3 +191,39 @@ p{
     background-color: rgb(182, 180, 180);
     cursor: pointer;
 }
+.header{
+    position: relative;
+}
+
+@media screen and (max-width:990px){
+    .hamburger{
+        position: absolute;
+        top:30px;
+        right: 220px;
+        cursor: pointer;
+    }
+    .line{
+        height: 3px;
+        width: 30px;
+        margin: 5px;
+        background: white;
+    }
+    /* .topics{
+        display: none;
+    } */
+    .topics.open{
+       flex-direction: column;
+       align-items: flex-end;
+       width: max-content;
+       position: fixed;
+       margin-right: auto;
+       z-index: 2;
+    }
+    .topics li{
+        border: none;
+    }
+    .topics li:hover{
+        background: grey;
+        cursor: pointer;
+    }
+}

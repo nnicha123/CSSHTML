@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block VS Inline</title>
+</head>
+<style>
+    h1{
+        /* Originally a block */
+        display: inline;
+        /* if display inline height and width will have no meaning */
+        height: 10rem;
+        width: 10rem;
+        background-color: aliceblue;
+    }
+    a{
+        /* originally in-line */
+        display: block;
+        height: 2rem;
+        width: 4rem;
+        margin: 10px;
+        padding: 10px;
+        background-color: violet;
+    }
+    div{
+        background-color: tomato;
+        height: 30vh;
+        width: 30vw;
+        text-align: center;
+        /* align right */
+        /* margin: 0 0 0 auto; */
+        /* align left */
+        /* margin: 0 auto 0 0; */
+        /* align center */
+        margin: 0 auto;
+        /* line-height to align text to center set equal to height*/
+        line-height: 30vh; 
+    }
+    /* Highlight selected text */
+    p::selection{
+        background-color: yellow;
+    }
+    p::first-letter{
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+</style>
+<body>
+    <h1>Hello</h1>
+    <a href="#">home</a>
+    <a href="#">contact us</a>
+    <div class="div-el">
+        <p>Div</p> 
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi minus inventore quas necessitatibus accusamus aut quidem quis tempora, nam molestiae.</p>
+</body>
+</html>

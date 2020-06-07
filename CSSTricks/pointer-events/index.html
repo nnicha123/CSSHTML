@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button,p{
+            background-color: cyan;
+            padding: 20px 40px;
+            border: none;
+            animation: fade 1s ease forwards;
+        }
+        button:hover,p:hover{
+            cursor: pointer;
+        }
+        @keyframes fade{
+            from{
+                opacity: 1;
+                pointer-events: all;
+            }
+            to{
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, est?</p>
+    <button>Button</button>
+</body>
+</html>

@@ -61,3 +61,6 @@ p,span {
     color: rgb(224, 26, 26);
     font-weight: bold;
 }
+img{
+    margin-bottom: 15px;
+}

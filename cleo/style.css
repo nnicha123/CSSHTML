@@ -35,3 +35,29 @@ p,span {
 .avatar{
     border-radius: 50%;
 }
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+
+}
+.icon-item{
+    width: 45px;
+    height:45px;
+    border-radius: 50%;
+    background-color: #fa95c7; 
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+}
+.el{
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgb(197, 196, 196);
+}
+.redblood{
+    color: rgb(224, 26, 26);
+    font-weight: bold;
+}

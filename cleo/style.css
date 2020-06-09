@@ -123,3 +123,16 @@ img{
     align-items: center;
     width: 100%;
 }
+.image-div{
+    overflow: hidden;
+    height: 90px;
+}
+.top-content img:hover{
+    transition: all 0.5s;
+    transform: scale(1.5);
+}
+.icon-item:hover{
+    background-color:  #e6007e;
+    cursor: pointer;
+    transition: all 0.5s;
+}

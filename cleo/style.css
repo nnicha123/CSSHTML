@@ -76,3 +76,28 @@ img{
     border-radius: 15px;
     border: 1px solid rgb(194, 193, 193);
 }
+.quotes{
+    width: 280.89px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+    align-items: center;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+.horo{
+    color: #fa95c7;
+    font-size: 40px;
+    font-weight: bold;
+}
+.taurus{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.taurus:hover{
+    cursor: pointer;
+}

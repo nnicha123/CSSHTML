@@ -67,4 +67,8 @@ img{
 .grid-items{
     box-shadow: 0 1px 5px rgba(0,0,0,0.3);
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
 }

@@ -101,6 +101,17 @@ img{
 .taurus:hover{
     cursor: pointer;
 }
-.youtube-items{
-    margin: 10px;
+
+.youtube-element{
+    border-top: 3px solid rgb(201, 199, 199);
+    border-bottom: 3px solid rgb(201, 199, 199);
+    padding: 20px 10px;
+}
+
+.aboutUs{
+    background-color: grey;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }

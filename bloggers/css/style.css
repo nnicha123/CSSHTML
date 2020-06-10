@@ -30,6 +30,32 @@ a{
     text-decoration: none;
     color: var(--text-gray);
 }
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+h2{
+    font-family: var(--Lexend);
+}
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
 /* Global Classes */
 
 /* navbar */
@@ -47,10 +73,6 @@ a{
     padding: 1rem 0;
     text-decoration: none;
     font-family: var(--Lexend);
-}
-.flex-row{
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .nav .nav-menu{
@@ -73,10 +95,6 @@ a{
 .nav .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
     color: var(--text-gray);
-}
-
-ul{
-    list-style-type: none;
 }
 
 .nav .nav-items{
@@ -111,6 +129,38 @@ ul{
 }
 
 /* navbar */
+
+/* Main content */
+
+/* Site title */
+main .site-title{
+    background: url('../assets/Background-image.png');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+main .site-title h1,h3{
+    margin: .3rem;
+}
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--sky);
+}
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+/* Site title */
+
+/* Main content */
+
 
 /* View port less than or equal to 750px */
 @media only screen and (max-width:750px){

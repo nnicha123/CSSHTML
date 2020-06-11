@@ -1,3 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+svg{
+    width: 50%;
+}
 #wheel-right,#wheel-left{
     animation: roll 2s linear infinite;
     transform-origin: center;

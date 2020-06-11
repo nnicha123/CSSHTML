@@ -1,0 +1,29 @@
+#wheel-right,#wheel-left{
+    animation: roll 2s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#man,#bike-body{
+    animation: moveUp 2s infinite;
+}
+
+@keyframes moveUp{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes roll{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}

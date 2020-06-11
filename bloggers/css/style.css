@@ -346,10 +346,53 @@ main .post-content .post-title a {
     margin: .4rem .6rem;
 }
 /* Sidebar */
-
 /* Main content */
 
-
+/* Footer */
+footer.footer{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+    color: var(--white);
+}
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+.footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+}
+.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color:white;
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width: 74%;
+}
+.footer .newsletter .form-element span{
+    color:var(--bg-color);
+    background: var(--sky);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+.footer .follow i{
+    color: var(--white);
+    padding: 0 .4rem;
+}
 /* View port less than or equal to 750px */
 @media only screen and (max-width:750px){
     .nav .nav-menu, .nav-items{

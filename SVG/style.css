@@ -1,10 +1,16 @@
 #wheel-right,#wheel-left{
-    animation: roll 2s infinite;
+    animation: roll 2s linear infinite;
     transform-origin: center;
     transform-box: fill-box;
 }
 #man,#bike-body{
-    animation: moveUp 2s infinite;
+    animation: moveUp 2s linear infinite;
+    transform-origin: bottom;
+}
+#hat{
+    animation: hatUp 2s linear infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
 }
 
 @keyframes moveUp{
@@ -12,7 +18,19 @@
         transform: translateY(0);
     }
     50%{
-        transform: translateY(-2%);
+        transform: translateY(-1%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes hatUp{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2%) rotateZ(20deg);
     }
     100%{
         transform: translateY(0);

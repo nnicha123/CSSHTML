@@ -36,5 +36,7 @@ $(document).ready(function(){
             scrollTop:0
         },3000);
     })
+    // AOS Instance
+    AOS.init();
 
 })

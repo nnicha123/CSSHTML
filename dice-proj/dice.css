@@ -1,5 +1,4 @@
 body{
-    background: #28aef9;
     padding: 0;
     margin: 0;
 }
@@ -26,10 +25,10 @@ body{
     }
 }
 .face{
-    background: white;
+    background:rgb(189, 58, 58);
     height: 250px;
     width: 250px;
-    border: 7px solid #28aef9;
+    border: 7px solid white;
     box-sizing: border-box;
     position: absolute;
     margin: auto;
@@ -39,7 +38,7 @@ body{
     right: 0;
 }
 .face >div{
-    background-color: #28aef9;
+    background-color: white;
     height: 35px;
     width: 35px;
     position: absolute;

@@ -2,181 +2,292 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume without bootstrap</title>
-    <!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <div class="header-wrapper">
+        <button type="button" class="lightButton" onclick="toggleDark()">
+            <i class="fa fa-moon-o" aria-hidden="true" style="font-size: 24px;"></i>
+        </button>
         <div class="header">
             <div class="head-left">
                 <h2>Nicha Ngamtweerat</h2>
-                <h3 style="color: #FFD027;margin: 5px 0;">Electronics Engineer</h3>
-                <p>Electronics engineer with experiences in 2 different automobile companies as both a strategic planner
-                    and
-                    a software engineer. Strong expertise in engineering but also in the management sector.</p>
+                <h3 style="color: #ffd027; margin: 5px 0;">Electronics Engineer</h3>
+                <p>
+                    Electronics engineer with experiences in 2 different automobile
+                    companies as both a strategic planner and a software engineer.
+                    Strong expertise in engineering but also in the management sector.
+                </p>
             </div>
             <div class="head-right">
-                <img src="me.jpg" alt="">
+                <img src="me.jpg" alt="" />
             </div>
         </div>
-        <div class="head-bottom">
+        <div class="head-bottom social">
             <div class="header-items">
-                <div><i class="fa fa-phone" aria-hidden="true" style="color: white;margin-right: 5px;"></i></div>
-                <div class="info">085-910-2653</div>
+                <div>
+                    <i class="fa fa-phone" aria-hidden="true" style="color: white; margin-right: 5px;"></i>
+                </div>
+                <div class="info" id="number">085-910-2653</div>
             </div>
             <div class="header-items">
-                <div><i class="fa fa-envelope" aria-hidden="true" style="color: white;margin-right: 5px;"></i></div>
-                <div class="info">nicha_nga@hotmail.com</div>
+                <div>
+                    <i class="fa fa-envelope" aria-hidden="true" style="color: white; margin-right: 5px;"></i>
+                </div>
+                <div class="info" id="email">nicha_nga@hotmail.com</div>
             </div>
             <div class="header-items">
-                <div><i class="fa fa-map-marker" aria-hidden="true" style="color: white;margin-right: 5px;"></i></div>
-                <div class="info">Bangkok, Thailand</div>
+                <div>
+                    <i class="fa fa-map-marker" aria-hidden="true" style="color: white; margin-right: 5px;"></i>
+                </div>
+                <div class="info" id="location">Bangkok, Thailand</div>
             </div>
             <div class="header-items">
-                <div><i class="fa fa-linkedin" aria-hidden="true" style="color: white;margin-right: 5px;"></i>
+                <div>
+                    <i class="fa fa-linkedin" aria-hidden="true" style="color: white; margin-right: 5px;"></i>
                 </div>
                 <div class="info">LinkedIn</div>
             </div>
         </div>
     </div>
-    <div class="content" style="margin-top: 20px;">
-        <div class="content-left">
-            <div class="experience">
-                <div class="splan">
-                    <h4 style="color:#FFD027"><u>WORK EXPERIENCE</u></h4>
-                    <h4 class="title"><b>Strategic Planner</b></h4>
-                    <h4 class="place">Nissan Motor Asia Pacific</h4>
-                    <h5 class="date" style="color:#FFD027">08/2019-04/2020</h5>
-                    <ul class="responsibility">
-                        <li>Responsible for previewing company business plans, to build up the team's engagement in the
-                            projects
-                            and give guidelines for improving.
-                        </li>
-                        <li>Monitor and suggest ideas for company's business plan improvement and create proposals to do
-                            so.
-                        </li>
-                        <li>Provide proposal to improve the training program for new trainees and create database
-                            improvement plans to improve staff information database</li>
-                    </ul>
+    <div class="content-wrapper">
+        <div class="content" style="margin-top: 20px;">
+            <div class="content-left">
+                <div class="work-experience">
+                    <div class="splan" id="workOne">
+                        <h4 style=" color: #ffd027;"><u>WORK EXPERIENCE</u></h4>
+                        <h4 class="title"><b>Strategic Planner</b></h4>
+                        <h4 class="place">Nissan Motor Asia Pacific</h4>
+                        <h5 class="date" style="color: #ffd027;">08/2019-04/2020</h5>
+                        <ul class="responsibility">
+                            <li>
+                                Responsible for previewing company business plans, to build up
+                                the team's engagement in the projects and give guidelines for
+                                improving.
+                            </li>
+                            <li>
+                                Monitor and suggest ideas for company's business plan
+                                improvement and create proposals to do so.
+                            </li>
+                            <li>
+                                Provide proposal to improve the training program for new
+                                trainees and create database improvement plans to improve
+                                staff information database
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tsusho" id="workTwo">
+                        <h4 class="title"><b>Software Engineer</b></h4>
+                        <h4 class="place">Toyota Tsusho Denso Electronics</h4>
+                        <h5 class="date" style="color: #ffd027;">11/2018-08/2019</h5>
+                        <ul class="responsibility">
+                            <li>
+                                Responsible for creating and modelling ECU system software
+                                based on the customer specification sheets.
+                            </li>
+                            <li>
+                                Extra responsibility involves improving the company's training
+                                system by creating embedded programming classes regarding
+                                MISRA C and C programming
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tsusho-intern" id="workThree">
+                        <h4 class="title"><b>Research Engineer</b></h4>
+                        <h4 class="place">Toyota Tsusho Denso Electronics</h4>
+                        <h5 class="date" style="color: #ffd027;">06/2017-08/2017</h5>
+                        <ul class="responsibility">
+                            <li>
+                                Research ECU through simulink simulations as well as simscape
+                                and try to model using PID.
+                            </li>
+                            <li>
+                                Explore the possibilities of involving the simscape program to
+                                the daily work process of the company.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="tsusho">
-                    <h4 class="title"><b>Software Engineer</b></h4>
-                    <h4 class="place">Toyota Tsusho Denso Electronics</h4>
-                    <h5 class="date" style="color:#FFD027">11/2018-08/2019</h5>
-                    <ul class="responsibility">
-                        <li>Responsible for creating and modelling ECU system software based on the customer
-                            specification
-                            sheets.
-                        </li>
-                        <li>Extra responsibility involves improving the company's training system by creating embedded
-                            programming classes regarding MISRA C and C programming
-                        </li>
-                    </ul>
-                </div>
-                <div class="tsusho-intern">
-                    <h4 class="title"><b>Research Engineer</b></h4>
-                    <h4 class="place">Toyota Tsusho Denso Electronics</h4>
-                    <h5 class="date" style="color:#FFD027">06/2017-08/2017</h5>
-                    <ul class="responsibility">
-                        <li>Research ECU through simulink simulations as well as simscape and try to model using PID.
-                        </li>
-                        <li>Explore the possibilities of involving the simscape program to the daily work process of the
-                            company.
-                        </li>
-                    </ul>
+                <div class="education">
+                    <h4 style="color: #ffd027;"><u>EDUCATION</u></h4>
+                    <h4>MEng Electronic and Electrical Engineering</h4>
+                    <p>University of Southampton</p>
+                    <p style="color: #ffd027; line-height: 0;">09/2014-06/2018</p>
                 </div>
             </div>
-            <div class="education">
-                <h4 style="color:#FFD027;"><u>EDUCATION</u></h4>
-                <h4>MEng Electronic and Electrical Engineering</h4>
-                <p>University of Southampton</p>
-                <p style="color:#FFD027;line-height: 0;">09/2014-06/2018</p>
+
+            <div class="content-right">
+                <div class="skills">
+                    <div class="skillSetAddable">
+                        <h4 style="color: rgb(255, 208, 39);"><u>SKILLS</u></h4>
+                        <div>
+                            <input type="text" class="inputNewSkills" id="skill-input" value="">
+                            <span><button class="addSkillsButton" onclick="addSkills()">Add Skills</button></span>
+                        </div>
+                    </div>
+                    <div class="skillset mt-2" id="allSkills">
+                        <li onclick="removeItem(id)" class="skill-list" id="teamWork">
+                            Teamwork
+                        </li>
+                        <li onclick="removeItem(id)" class="skill-list" id="leaderShip">
+                            Leadership
+                        </li>
+                        <li onclick="removeItem(id)" class="skill-list" id="flexibility">
+                            Flexibility
+                        </li>
+                        <li onclick="removeItem(id)" class="skill-list" id="language">
+                            Language
+                        </li>
+                        <li onclick="removeItem(id)" class="skill-list" id="electronics">
+                            Electronics
+                        </li>
+                        <li onclick="removeItem(id)" class="skill-list" id="programming">
+                            Programming
+                        </li>
+                        <li onclick="removeItem(id)" class="skill-list" id="problemSolving">
+                            Problem Solving
+                        </li>
+                    </div>
+                </div>
+                <h4 style="color: #ffd027; margin-top: 1.2rem; margin-bottom: 0.8rem;">
+                    <u>PROBLEM SOLVING SKILLS</u>
+                </h4>
+                <h5><b>Programming</b></h5>
+                <p>C, Javascript, Python</p>
+                <h5><b>Microsoft</b></h5>
+                <p>Word, Excel (+excel macros), Powerpoint</p>
+                <h5><b>Lorem</b></h5>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
+                    fugit.
+                </p>
+                <h5><b>Lorem</b></h5>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
+                    fugit.
+                </p>
+                <h5><b>Lorem</b></h5>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
+                    fugit.
+                </p>
+                <h4 style="color: #ffd027; margin-bottom: 0.8rem;" class="languages">
+                    <u>LANGUAGES</u>
+                </h4>
+                <div class="english" style="width: 210px;">
+                    <span class="mr-5">Thai</span><span class="small-box">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </span>
+                </div>
+                <div class="english" style="width: 210px;">
+                    <span class="mr-5">English</span><span class="small-box">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div style="background-color: rgb(201, 192, 192);"></div>
+                        <div style="background-color: rgb(201, 192, 192);"></div>
+                    </span>
+                </div>
+                <div class="english" style="width: 210px;">
+                    <span class="mr-5">Japanese</span><span class="small-box">
+                        <div></div>
+                        <div></div>
+                        <div style="background-color: rgb(201, 192, 192);"></div>
+                        <div style="background-color: rgb(201, 192, 192);"></div>
+                        <div style="background-color: rgb(201, 192, 192);"></div>
+                    </span>
+                </div>
+                <div class="Interests">
+                    <h4 style="color: #ffd027; margin-top: 1.2rem; margin-bottom: 0.8rem;">
+                        <u>INTERESTS</u>
+                    </h4>
+                    <div class="interest-items">
+                        <div class="interest">
+                            <div>
+                                <i class="fa fa-book" aria-hidden="true" style="color: #ffd027;"></i>
+                            </div>
+                            <div>Reading</div>
+                        </div>
+                        <div class="interest">
+                            <div>
+                                <i class="fa fa-music" aria-hidden="true" style="color: #ffd027;"></i>
+                            </div>
+                            <div>Music</div>
+                        </div>
+                        <div class="interest">
+                            <div>
+                                <i class="fa fa-podcast" aria-hidden="true" style="color: #ffd027;"></i>
+                            </div>
+                            <div>Technologies</div>
+                        </div>
+                        <div class="interest">
+                            <div>
+                                <i class="fa fa-cutlery" aria-hidden="true" style="color: #ffd027;"></i>
+                            </div>
+                            <div>Cooking</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="content-right">
-            <div class="skills">
-                <h4 style="color:#FFD027"><u>SKILLS</u></h4>
-                <div class="skillset">
-                    <li>Teamwork</li>
-                    <li>Leadership</li>
-                    <li>Flexibility</li>
-                    <li>Language</li>
-                    <li>Electronics</li>
-                    <li>Programming</li>
-                    <li>Problem Solving</li>
-                </div>
+        <div class="buttons">
+            <button class="button-dark" type="button" onclick="toggleDark()">
+                Toggle Mode
+            </button>
+            <div class="inputs" style="display: flex;flex-direction: column;justify-content: start;">
+                <form>
+                    Select where to add info.:
+                    <select>
+                        <option id="work1" selected>Work-1</option>
+                        <option id="work2">Work-2</option>
+                        <option id="work3">Work-3</option>
+                        <option id="education">Education</option>
+                    </select>
+                </form>
+                <input type="text" id="experience-input" />
+                <button class="button-input" type="button" onclick="inputItems()">
+                    Input items to experience
+                </button>
             </div>
-            <h4 style="color:#FFD027;margin-top: 1.2rem;margin-bottom: 0.8rem;"><u>PROBLEM SOLVING SKILLS</u></h4>
-            <h5><b>Programming</b></h5>
-            <p>C, Javascript, Python</p>
-            <h5><b>Microsoft</b></h5>
-            <p>Word, Excel (+excel macros), Powerpoint</p>
-            <h5><b>Lorem</b></h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, fugit.</p>
-            <h5><b>Lorem</b></h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, fugit.</p>
-            <h5><b>Lorem</b></h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, fugit.</p>
-            <h4 style="color: #FFD027;margin-bottom: 0.8rem;" class="languages"><u>LANGUAGES</u></h4>
-            <div class="english" style="width: 210px;"><span
-                    class="mr-5">Thai</span><span class="small-box">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </span>
-            </div>
-            <div class="english" style="width: 210px;"><span
-                    class="mr-5">English</span><span class="small-box">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div style="background-color: rgb(201, 192, 192);"></div>
-                    <div style="background-color: rgb(201, 192, 192);"></div>
-                </span>
-            </div>
-            <div class="english" style="width: 210px;"><span
-                    class="mr-5">Japanese</span><span class="small-box">
-                    <div></div>
-                    <div></div>
-                    <div style="background-color: rgb(201, 192, 192);"></div>
-                    <div style="background-color: rgb(201, 192, 192);"></div>
-                    <div style="background-color: rgb(201, 192, 192);"></div>
-                </span>
-            </div>
-            <div class="Interests">
-                <h4 style="color:#FFD027;margin-top: 1.2rem; margin-bottom: 0.8rem;"><u>INTERESTS</u></h4>
-                <div class="interest-items">
-                    <div class="interest">
-                        <div><i class="fa fa-book" aria-hidden="true" style="color:#FFD027"></i></div>
-                        <div> Reading</div>
-                    </div>
-                    <div class="interest">
-                        <div><i class="fa fa-music" aria-hidden="true" style="color:#FFD027"></i></div>
-                        <div> Music</div>
-                    </div>
-                    <div class="interest">
-                        <div><i class="fa fa-podcast" aria-hidden="true" style="color:#FFD027"></i></div>
-                        <div> Technologies</div>
-                    </div>
-                    <div class="interest">
-                        <div><i class="fa fa-cutlery" aria-hidden="true" style="color:#FFD027"></i></div>
-                        <div> Cooking</div>
-                    </div>
-                </div>
+            <div class="changeNumber"
+                style="display: flex;flex-direction: column;justify-content: start;margin-left: 20px;">
+                <form>
+                    Select where to update info.:
+                    <select>
+                        <option id="Number" selected>Number</option>
+                        <option id="Email">Email</option>
+                        <option id="Location">Location</option>
+                    </select>
+                </form>
+                <input type="text" placeholder="Update Information" id="number-input" style="width: 250px;" />
+                <button class="button-number" type="button" onclick="changeNumber()" style="width: 250px;">
+                    Click to update number
+                </button>
             </div>
         </div>
     </div>
 
+    <script>
+        function toggleDark() {
+            var element = document.body;
+            var newhead = document.getElementsByClassName('header')[0];
+            var socialEl = document.getElementsByClassName('social')[0];
+            socialEl.classList.toggle('social-dark-mode');
+            newhead.classList.toggle('header-dark-mode');
+            element.classList.toggle('dark-mode');
+        }
+    </script>
+    <script src="dom.js"></script>
 </body>
 
 </html>

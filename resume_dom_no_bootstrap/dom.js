@@ -31,7 +31,7 @@ function toggleDark() {
 }
 function inputItems() {
   let text = document.getElementById('experience-input').value;
-  let el = document.createElement('p');
+  let el = document.createElement('li');
   el.innerHTML = text;
   let name;
   if (document.getElementById('work1').selected) {
@@ -40,12 +40,11 @@ function inputItems() {
     name = 'workTwo';
   } else if (document.getElementById('work3').selected) {
     name = 'workThree';
-  } else {
-    name = 'education';
   }
-
-  document.getElementById(name).appendChild(el);
-  document.getElementById('experience-input').value = '';
+  if (text) {
+    document.getElementById(name).appendChild(el);
+    document.getElementById('experience-input').value = '';
+  }
 }
 // Can remove skills by clicking on them
 function removeItem(id) {
@@ -69,6 +68,7 @@ function changeNumber() {
       'Click to update location';
   }
   document.getElementById(name).innerHTML = numberValue;
+  document.getElementById('number-input').value = '';
 }
 
 function addSkills() {
@@ -79,4 +79,5 @@ function addSkills() {
   el.setAttribute('id', newSkill);
   //   el.addEventListener('click', removeItem(id));
   document.getElementById('allSkills').appendChild(el);
+  document.getElementById('skill-input').value = '';
 }

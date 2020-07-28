@@ -13,7 +13,7 @@
 <body>
     <div class="header-wrapper">
         <button type="button" class="lightButton" onclick="toggleDark()">
-            <i class="fa fa-moon-o" aria-hidden="true" style="font-size: 24px;"></i>
+            <i class="fa fa-moon-o" aria-hidden="true" style="font-size: 24px"></i>
         </button>
         <div class="header">
             <div class="head-left">
@@ -32,25 +32,25 @@
         <div class="head-bottom social">
             <div class="header-items">
                 <div>
-                    <i class="fa fa-phone" aria-hidden="true" style="color: white; margin-right: 5px;"></i>
+                    <i class="fa fa-phone" aria-hidden="true" style="margin-right: 5px;"></i>
                 </div>
                 <div class="info" id="number">085-910-2653</div>
             </div>
             <div class="header-items">
                 <div>
-                    <i class="fa fa-envelope" aria-hidden="true" style="color: white; margin-right: 5px;"></i>
+                    <i class="fa fa-envelope" aria-hidden="true" style="margin-right: 5px;"></i>
                 </div>
                 <div class="info" id="email">nicha_nga@hotmail.com</div>
             </div>
             <div class="header-items">
                 <div>
-                    <i class="fa fa-map-marker" aria-hidden="true" style="color: white; margin-right: 5px;"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 5px;"></i>
                 </div>
                 <div class="info" id="location">Bangkok, Thailand</div>
             </div>
             <div class="header-items">
                 <div>
-                    <i class="fa fa-linkedin" aria-hidden="true" style="color: white; margin-right: 5px;"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true" style="margin-right: 5px;"></i>
                 </div>
                 <div class="info">LinkedIn</div>
             </div>
@@ -275,17 +275,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        function toggleDark() {
-            var element = document.body;
-            var newhead = document.getElementsByClassName('header')[0];
-            var socialEl = document.getElementsByClassName('social')[0];
-            socialEl.classList.toggle('social-dark-mode');
-            newhead.classList.toggle('header-dark-mode');
-            element.classList.toggle('dark-mode');
-        }
-    </script>
     <script src="dom.js"></script>
 </body>
 

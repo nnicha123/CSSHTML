@@ -188,8 +188,10 @@ img {
   display: block;
   width: 100%;
   margin: 0;
-  background-color: transparent;
+  background-color: rgb(4, 6, 15);
   border: none;
+  outline: none;
+  color: white;
 }
 .lightButton i {
   margin: 0;
@@ -201,9 +203,12 @@ img {
   background-color: rgb(69, 103, 133);
   outline: none;
 }
-/* .header-wrapper {
-  background-color: transparent;
-} */
+.lightButton-dark {
+  background-color: whitesmoke;
+}
+.lightButton-dark i {
+  color: rgb(25, 39, 51);
+}
 .skill-list:hover {
   background-color: rgba(255, 208, 39, 0.5);
   cursor: pointer;
